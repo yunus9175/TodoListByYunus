@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+.clearbtn:hover{
+    background-color: blue;
+    width: 80%;
+}
+.main_div{
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.center_div{
+    width: 35%;
+    height: 80vh;
+    background-color: white;
+    box-shadow: 5px 5px 25px -5px black;
+    border-radius: 15px;
+}
+.myh1{
+    font-family: 'Yusei Magic', sans-serif;
+    color: black;
+    padding: 6px 0 2px 0;
+    margin-bottom: 10px;
+  
+}
+
+.addpro{
+    font-family: 'Yusei Magic', sans-serif;
+    text-align: center;
+    height: 30px;
+    top: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 500;
+    width: 60%;
+    border-bottom: 2px solid rgb(189, 143, 248);
+    outline: none;
+}
+.mybtn{
+    
+    min-height: 40px;
+    width: 40px;
+    border-color: transparent;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    border:none;
+    outline: none;
+    padding: inherit;
+    margin-left: 10px;
+    box-shadow: 5px 5px 15px -5px black;
+}
+
+.mybtn:hover{
+    background-color: blue;
+}
+ol{
+    margin-top: 30px;
+
+}
+ol li{
+    font-family: 'Yusei Magic', sans-serif;
+    padding-left: 0px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    color: black;
+    text-transform: capitalize;
+}
+.todo_style{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+.todo_style .fa-times{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 50%;
+    margin: 0 15px 0 35px;
+    color: white;
+    box-shadow: 5px 5px 15px -5px black;
+}
+.todo_style .fa-times:hover{
+    background-color: red;
+}
+.todo_style .fa-times:hover .list_style{
+    color: red;
+}
+
+@media (max-width : 768px){
+    .center_div{
+        width: 55%;
+    }
+    
+}
+
+.todo_style .fa-times{
+    margin: 0 15px 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mybtn1{
+    min-height: 40px;
+    width: fit-content;
+    border-color: transparent;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    border:none;
+    outline: none;
+    padding: 3px;
+    margin: 10px;
+    box-shadow: 5px 5px 15px -5px black;
+}
+.mybtn2 .mybtn1{
+    margin-left: -20px;
+}
+.mybtn2:hover{
+    background-color: green;
+}
+.mybtn1:hover{
+    background-color: red;
+}
+li{
+    margin-left: 5px;
+}
