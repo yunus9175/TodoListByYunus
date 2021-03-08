@@ -13,8 +13,11 @@ import Loader from "react-loader-spinner";
     // const [tblsaveLoad, setTblSaveLoad] = useState(false);
     const [Items, setItems] = useState([]);
     const EnterProduct =(event)=>{
-     
-        setInputData(event.target.value);          
+     const {name,value}=event.target;
+        // setInputData(event.target.value);
+        setItems(prevState=>({
+            ...prevState,[name]:value
+        }))          
       
     };
    
@@ -22,7 +25,7 @@ import Loader from "react-loader-spinner";
       
         setItems((oldItems) =>{
           
-            return [...oldItems,InputData];
+            return [...oldItems,{name:Items.name}];
             
         } );
         toast.success("Success Items Added !", {
@@ -60,7 +63,7 @@ import Loader from "react-loader-spinner";
        
         let origstate=[...Items]
         origstate[id]=text
-        setItems(origstate)
+        setItems(...origstate,{name:text})
         // setItems((oldItems)=>{
         //     return oldItems.map((item,index)=>{
         //       if(id===index){
@@ -94,7 +97,7 @@ import Loader from "react-loader-spinner";
             
                 <h1 className="myh1">My Todo-List</h1>
               <br/>
-              <input type="text"  value={InputData} placeholder="Enter Product Name" onKeyPress={handleKeyPress} onChange={EnterProduct}/>
+              <input type="text"  value={Items.name} placeholder="Enter Product Name" onKeyPress={handleKeyPress} onChange={EnterProduct}/>
               <button className="mybtn" onClick={AddProductName}>Add</button>
               
           

@@ -14,12 +14,23 @@
     align-items: center;
     text-align: center;
 }
+.olist{
+    margin-left: 400px;
+    
+}
 .center_div{
     width: 35%;
     height: 80vh;
     background-color: white;
     box-shadow: 5px 5px 25px -5px black;
     border-radius: 15px;
+}
+.center_div2{
+    width: 100%;
+    height: 80vh;
+    background-color: white;
+    /* box-shadow: 5px 5px 25px -5px black; */
+    /* border-radius: none; */
 }
 .myh1{
     font-family: 'Yusei Magic', sans-serif;
@@ -41,6 +52,27 @@
     width: 60%;
     border-bottom: 2px solid rgb(189, 143, 248);
     outline: none;
+}
+.iteminput{
+    width: 50px;;
+}
+.Inputbtn{
+    
+    min-height: 40px;
+    width: 80px;
+    border-color: transparent;
+    background-color: rgb(35, 218, 132);
+    color: white;
+    font-size: 12px;
+    border:none;
+    outline: none;
+    padding: inherit;
+    margin-left: 10px;
+    box-shadow: 5px 5px 15px -5px black;
+}
+
+.Inputbtn:hover{
+    background-color: blue;
 }
 .mybtn{
     
@@ -139,4 +171,23 @@ ol li{
 }
 li{
     margin-left: 5px;
+}
+.clearbtn1{
+    background-color: rgb(56, 80, 216);
+    width: 200px;
+    /* margin: 10px; */
+}
+.clearbtn1:hover{
+    opacity: 0.9;
+    color: rgb(143, 219, 238);
+}
+.updatebtn{
+    background-color: rgb(68, 91, 221);
+    width: 150px;
+    padding: 11px;
+    margin: 1px;
+}
+.updatebtn:hover{
+    opacity: 0.9;
+    color: rgb(143, 219, 238);
 }

@@ -1,0 +1,28 @@
+.taskinput{
+    width: 30%;
+    height:30px ;
+    margin: 10px;
+    margin: 20px;
+   
+    box-shadow: rgb(199, 186, 182) 5px 5px 5px -1px;
+}
+.taskbtn{
+    width: 14%;
+    height: 4px;
+    background: blueviolet;
+    margin: 100px;
+    margin-top: 0;
+    padding: 20px;
+}
+.taskbtn:hover{background: chartreuse;}
+.taskdiv{
+    height: 350px;
+    width: 700px;
+    border: black 2px solid;
+    align-content: center;
+    margin-right: 10px;
+    margin-left: 400px;
+    /* margin-top: -90px; */
+    margin-bottom: 50px;
+    /* background: url('./back1.jpg'); */
+}

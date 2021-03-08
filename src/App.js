@@ -8,9 +8,11 @@ import ForgetPassword from './Component/Forgetpassword'
 import Contactus from './Component/Contactus'
 import Aboutus from './Component/Aboutus'
 import Todolist from './Component/Todolist'
+import NewTodoList from './Component/NewTodoList'
 import {toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import UserCards from './Component/UserCards';
+import TimerParent from './Component/TimerParent';
 
 toast.configure()
 function App() {
@@ -22,6 +24,8 @@ function App() {
      <Switch>
      <Route path="/UserCards" component={UserCards} />
      <Route path="/Todolist" component={Todolist} />
+     <Route path="/NewTodoList" component={NewTodoList} />
+     <Route path="/TimerParent" component={TimerParent} />
      <Route path="/Signin" component={SignIn} />
           <Route path="/Signup" component={SignUp} />
           <Route path="/Forgetpassword" component={ForgetPassword} />

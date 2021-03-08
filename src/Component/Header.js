@@ -18,8 +18,12 @@ function Header() {
              </span>
                 </div>
              <div className="spanDiv">
-             <span>  <Link to="/UserCards" className="link">User Cards</Link></span>
+             <span>  <Link to="/TimerParent" className="link">Multi task Timert</Link></span>
 
+             <span>  <Link to="/NewTodolist" className="link">Multi Todo List</Link></span>
+
+             <span>  <Link to="/UserCards" className="link">User Cards</Link></span>
+             
              <span>  <Link to="/Todolist" className="link">Todo List</Link></span>
              {/* <span>  <Link to="/Signin" className="link">SignIn</Link></span>
              <span><Link to="/SignUp" className="link">SignUp</Link></span>
